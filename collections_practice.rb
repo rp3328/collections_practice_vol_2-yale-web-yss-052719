@@ -61,4 +61,7 @@ def organize_schools(input)
       else
         organized[city] = [name]
       end
+    end
+  end
+  organized
 end
