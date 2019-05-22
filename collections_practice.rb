@@ -58,4 +58,7 @@ def organize_schools(input)
     info.each do |location, city|
       if organized.has_key?(city)
         organized[city] << name
+      else
+        organized[city] = [name]
+      end
 end
