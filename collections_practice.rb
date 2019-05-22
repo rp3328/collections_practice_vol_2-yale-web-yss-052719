@@ -51,3 +51,5 @@ def find_cool(input)
     |info| info[:temperature] == "cool"
   }
 end
+
+def organize_schools(input)
