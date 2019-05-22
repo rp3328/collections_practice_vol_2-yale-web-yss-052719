@@ -55,5 +55,6 @@ end
 def organize_schools(input)
   organized = {}
   input.each do |name, info|
-    info.each do |place, city|
+    info.each do |location, city|
+      
 end
