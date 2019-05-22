@@ -53,5 +53,7 @@ def find_cool(input)
 end
 
 def organize_schools(input)
-  
+  organized = {}
+  input.each do |name, location|
+    
 end
