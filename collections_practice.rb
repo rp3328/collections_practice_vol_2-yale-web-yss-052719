@@ -45,3 +45,9 @@ def merge_data(key, val)
   end
   arr
 end
+
+def find_cool(input)
+  input.select{
+    |info| info[:temperature] == "cool"
+  }
+end
