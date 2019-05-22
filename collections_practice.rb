@@ -43,5 +43,6 @@ def merge_data(key, val)
       end
     end
   end
+  binding.pry
   arr
 end
