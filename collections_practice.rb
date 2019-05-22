@@ -1,1 +1,47 @@
 # your code goes here
+
+def begins_with_r(array)
+  array.all? {
+    |element| element.start_with?("r")
+  }
+end
+
+def contain_a(array)
+  array.select{
+    |element| element.include?("a")
+  }
+end
+
+def first_wa(array)
+  array.find {
+    |element| element[0..1] == "wa"
+  }
+end
+
+def remove_non_strings(array)
+  array.select{
+    |element| element.class == String
+  }
+end
+
+def count_elements(array)
+  num = 0
+  array.uniq.collect do |element|
+    element[:count] = array.count(element)
+    element
+  end
+end
+
+def merge_data(key, val)
+  arr = []
+  val.each do |info|
+    info.each do |name, type|
+      key.each do |kname|
+        if kname.values[0] == name
+          arr << kname.merge(val)
+        end
+      end
+    end
+  end
+  arr
+end
