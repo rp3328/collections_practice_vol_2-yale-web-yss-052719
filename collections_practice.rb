@@ -56,5 +56,5 @@ def organize_schools(input)
   organized = {}
   input.each do |name, info|
     info.each do |location, city|
-      
+      if organized.has_key?(city)
 end
