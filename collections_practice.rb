@@ -38,7 +38,7 @@ def merge_data(key, val)
     info.each do |name, type|
       key.each do |kname|
         if kname.values[0] == name
-          arr << kname.merge(val)
+          arr << kname.merge(type)
         end
       end
     end
